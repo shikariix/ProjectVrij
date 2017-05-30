@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Chase.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Chase.cs" Line="60" Column="17" />
+      <File FileName="Assets\Scripts\PickUpKey.cs" Line="43" Column="45" />
+      <File FileName="Assets\Scripts\UnlockDoor.cs" Line="19" Column="19" />
+      <File FileName="..\MOVE (Eindproject)\Assets\Scripts\RaycastShoot.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\HearingScript.cs" Line="20" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
