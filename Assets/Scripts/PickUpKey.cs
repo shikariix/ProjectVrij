@@ -35,14 +35,10 @@ public class PickUpKey : MonoBehaviour {
 				if (hit.collider.gameObject == key) {
 					key.SetActive (false);
 					hasKey = true;
-				} else if (hit.collider.gameObject == item) {
-					holdItem = !holdItem;
+				} else if (hit.collider.gameObject == item && holdItem == false) {
+					holdItem = true;
 				}
 			} 
-		} else if (holdItem == true && Input.GetButtonDown ("Fire1")) {
-			rbItem.AddForce(aim.transform.forward * 500);
-			rbItem.useGravity = true;
-			holdItem = !holdItem;
 		}
 
 		if (holdItem == true) {
@@ -50,6 +46,11 @@ public class PickUpKey : MonoBehaviour {
 			item.transform.rotation = heldPos.rotation;
 			rbItem.useGravity = false;
 			rbItem.velocity = new Vector3 (0, 0, 0);
+			if (Input.GetButtonDown ("Fire1")) {
+				rbItem.AddForce(aim.transform.forward * 500);
+				rbItem.useGravity = true;
+				holdItem = false;
+			}
 		}
 	}
 }

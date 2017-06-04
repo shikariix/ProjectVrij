@@ -9,14 +9,17 @@ public class HearingScript : MonoBehaviour {
 	public GameObject item;
 	public float dist;
 
-	// Use this for initialization
+	Chase chaseScript;
+
 	void Start () {
-		
+		chaseScript = GetComponent<Chase> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		dist = Vector3.Distance(item.transform.position, transform.position);
-		//Debug.Log (dist);
+
+	public void HearNoise(GameObject noise) {
+		dist = Vector3.Distance(noise.transform.position, transform.position);
+		Debug.Log (dist);
+		if (dist < range) {
+			chaseScript.agent.SetDestination (noise.transform.position);
+		}
 	}
 }

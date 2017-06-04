@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Chase.cs" />
      <Compile Include="Assets\Scripts\HearingScript.cs" />
      <Compile Include="Assets\Scripts\PickUpKey.cs" />
+     <Compile Include="Assets\Scripts\SoundSignal.cs" />
      <Compile Include="Assets\Scripts\UnlockDoor.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
